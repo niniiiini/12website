@@ -1,0 +1,36 @@
+
+body{
+    background-image: url("../12website/img/底圖.png");
+}
+
+
+p{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900;
+}
+
+h3{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+}
+
+
+
+.aa img{
+    width:100%;
+    height:100%;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+.button{
+    margin-left: 47.8%;
+}
