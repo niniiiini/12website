@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@900&display=swap"
+        rel="stylesheet">
+
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row row-eq-height">
+            <div class="col-lg-4 col-md-4 col-sm-12 aa">
+                <img src="../img/@林投姐.png" alt="Cinque Terre">
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 my-auto">
+                <div class="row  yg01 justify-content-center">
+                    <div class="p-5">
+                        <h1>你跟林投姐很像！</h1>
+                        <p>一名女子已逝丈夫的好友，為了錢財而常女子家中到噓寒問暖，女子也因此日久生情而嫁給那位男子，結果那位男子將拿到的才產拿去香港經商，並回到家鄉另娶新妻。
+                            自從男子出海後，女子就每天站在海邊等丈夫回來，卻一直等不到丈夫歸來，最後僅剩不多的財產也都用盡，最後女子在林投樹上吊自殺。當地居民也常看到披髮的女鬼站在海邊的林投樹下。                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-1 mx-auto">
+            <a href="#more"><img src="../img/icon/d_arrow.svg" alt=""></a>
+        </div>
+
+    </div>
+    <!--<footer class="p-4 border-top">
+           <div class="container align-item-center justify-content-between">
+           <ul class="nav">
+               <li class="nav-item">
+                   <a href="" class="nav-link text-muted">關於本站</a>
+               </li>
+           </ul>
+           </div>
+       </footer>-->
+
+       <div id="more">
+        <div class="p-5">
+            <div class="container">
+                <div class="row">
+                    <div v-for="(item,index) in mores" v-if="index<3" class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img :src="item.imgSrc" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    {{item.username}}
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：{{item.email}}<br>
+                                    年代：{{item.account}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img src="img/水1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    水鬼
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：全臺各地<br>
+                                    年代：未知
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img src="img/虎1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    虎姑婆
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：客家聚落<br>
+                                    年代：未知
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    <div class="button">
+
+        <a href="../map.html">
+            <button class="btn btn-danger" type="button">看地圖</button>
+        </a>
+
+    </div>
+    </div>
+
+     <!-- jQuery -->
+     <script src="../vendor/jquery/jquery.min.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+ 
+     <!-- Plugin JavaScript -->
+     <script src="../https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+     <!-- Contact Form JavaScript -->
+     <script src="../js/jqBootstrapValidation.js"></script>
+     <script src="../js/contact_me.js"></script>
+ 
+     <!-- Theme JavaScript -->
+     <script src="../js/agency.min.js"></script>
+     <!-- vue.js -->
+     <script src="../vendor/vue/vue.min.js"></script>
+
+     <script>
+        var more = new Vue({
+            el: "#more",
+            data: {
+                mores: [
+                    { imgSrc: "../img/水1.png", name: "水鬼", area: "全台各地", years: "未知" },
+                    { imgSrc: "../img/虎1.png", name: "虎姑婆", area: "客家聚落", years: "未知" },
+                    { imgSrc: "../img/林1.png", name: "林投姐", area: "台南", years: "清代" }
+                ]
+            }
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+
+body{
+    background-image: url("img/底圖.png");
+}
+
+
+p{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900;
+}
+
+h3{
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+}
+  
+menu{
+    width: 40px;
+    height: 40px;
+    margin: -5%;
+}
+.side-menu{
+    position: fixed;
+    /* position: relative; */
+    z-index: 100;
+    width: 300px;
+    height: 100%;
+    padding: 50px 35px;
+    box-sizing: border-box;
+    background-color: #c8e5e3;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: 1s;
+    font-family: 'Noto Serif TC', serif;
+}
+.side-menu label{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: 30px;
+    bottom: 0;
+    margin: -5%;
+}
+#side-menu-switch{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+#side-menu-switch:checked+.side-menu{
+    transform: translateX(0);
+}
+nav div{
+    padding-bottom: 50px;
+}
+nav a{
+    display: block;
+    padding: 30px 40px;
+    color: #4b8c57;
+    text-decoration: none;
+    position: relative;
+}
+nav a+a::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #ce4c2c;
+    left: 20px;
+    right: 2 0px;
+    top: 0;
+}
+.aa img{
+    width:100%;
+    height:100%;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+.button{
+    margin-left: 47.8%;
+}
+/* .carousel-inner{
+    width: 500px;
+    height: 100%;
+    position: center;
+} */
+
+.popup,
+.popup__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    display: block;
+    overflow: scroll;
+    z-index: 50;
+}
+
+.popup__backdrop {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.popup__content-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 370px;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-align: center;
+    overflow: auto;
+    background-color: white;
+    box-shadow: 0px 0px 30px 0px rgba(46, 61, 73, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .popup__content-wrapper {
+        width: 43%;
+        height: 45vh;
+        min-width: calc(100% - 50px);
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .popup__content-wrapper {
+        width: 43%;
+        height: 500px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .popup__content-wrapper {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.btn-close {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            width: 12px;
+            height: 12px;
+        }
+
+        
+.Space {
+            width: 100%;
+            height: 500px;
+
+        }
+
+        /* menu{ 
+            width: 40px;
+            height: 40px;
+            margin: -5%;
+        }
+        .side-menu{
+            position: relative;
+            width: 300px;
+            height: 100%;
+            padding: 50px 35px;
+            box-sizing: border-box;
+            background-color: #c8e5e3;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(-100%);
+            transition: 1s;
+            font-family: 'Noto Serif TC', serif;
+        }
+        .mySidenav label{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 0px;
+            top: 30px;
+            bottom: 0;
+            margin: -5%;
+        }
+        #side-menu-switch{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        #side-menu-switch:checked+.side-menu{
+            transform: translateX(0);
+        }
+        nav div{
+            padding-bottom: 50px;
+        }
+        nav a{
+            display: block;
+            padding: 30px 40px;
+            color: #4b8c57;
+            text-decoration: none;
+            position: relative;
+        }
+        nav a+a::before{
+            content: '';
+            position: absolute;
+            border-top: 1px solid #ce4c2c;
+            left: 20px;
+            right: 2 0px;
+            top: 0;
+        }*/
+        

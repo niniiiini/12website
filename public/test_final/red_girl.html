@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@900&display=swap"
+        rel="stylesheet">
+
+    <link href="../style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row row-eq-height">
+            <div class="col-lg-4 col-md-4 col-sm-12 aa">
+                <img src="../img/@紅衣小女孩.png" alt="Cinque Terre">
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 my-auto">
+                <div class="row  yg01 justify-content-center">
+                    <div class="p-5">
+                        <h1>你跟紅衣小女孩很像！</h1>
+                        <p>1998年電視台節目《神出鬼沒》播送了一段用V8拍攝的影片，影片內容為呂先生與他的家人們在大坑風景區郊遊。影片中在呂先生一家的隊伍後，跟隨著一名身穿紅色童裝的，臉孔蒼老、表情陰沉、姿勢古怪的小女孩。
+                            同時也拍攝到姊夫長著獠牙的畫面，在旅遊結束後的幾天，原先身體健康的姊夫突然病倒。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="col-1 mx-auto">
+            <a href="#more"><img src="../img/icon/d_arrow.svg" alt=""></a>
+        </div>
+
+    </div>
+    <!--<footer class="p-4 border-top">
+           <div class="container align-item-center justify-content-between">
+           <ul class="nav">
+               <li class="nav-item">
+                   <a href="" class="nav-link text-muted">關於本站</a>
+               </li>
+           </ul>
+           </div>
+       </footer>-->
+
+    <div id="more">
+        <div class="p-5">
+            <div class="container">
+                <div class="row">
+                    <div v-for="(item,index) in mores" v-if="index<3" class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img :src="item.imgSrc" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    {{item.name}}
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：{{item.area}}<br>
+                                    年代：{{item.years}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img src="img/水1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    水鬼
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：全臺各地<br>
+                                    年代：未知
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg p-5">
+                        <div class="card shadow-lg bg-light">
+                            <img src="img/虎1.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title text-center text-secondary">
+                                    虎姑婆
+                                </h3>
+                                <p class="card-text text-center text-secondary">
+                                    地區：客家聚落<br>
+                                    年代：未知
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+    <div class="button">
+
+        <a href="../map.html">
+            <button class="btn btn-danger" type="button">看地圖</button>
+        </a>
+
+    </div>
+    </div>
+
+     <!-- jQuery -->
+     <script src="../vendor/jquery/jquery.min.js"></script>
+
+     <!-- Bootstrap Core JavaScript -->
+     <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+ 
+     <!-- Plugin JavaScript -->
+     <script src="../https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ 
+     <!-- Contact Form JavaScript -->
+     <script src="../js/jqBootstrapValidation.js"></script>
+     <script src="../js/contact_me.js"></script>
+ 
+     <!-- Theme JavaScript -->
+     <script src="../js/agency.min.js"></script>
+     <!-- vue.js -->
+     <script src="../vendor/vue/vue.min.js"></script>
+
+     <script>
+        var more = new Vue({
+            el: "#more",
+            data: {
+                mores: [
+                    { imgSrc: "../img/水1.png", name: "水鬼", area: "全台各地", years: "未知" },
+                    { imgSrc: "../img/虎1.png", name: "虎姑婆", area: "客家聚落", years: "未知" },
+                    { imgSrc: "../img/林1.png", name: "林投姐", area: "台南", years: "清代" }
+                ]
+            }
+        })
+
+        $.ajax({
+                url: "/list",
+                method: "get",
+                dataType: "json",
+                data: {},
+                success: function (list) {
+                    more.mores = list;
+                }
+            })
+
+    </script>
+</body>
+
+</html>

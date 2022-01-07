@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@900&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+</head>
+
+<body>
+    
+    <div class="site-smoothscroll">
+        <div class="site-progress" id="site-progress"></div>
+
+        <div class="popup">
+            <div class="popup__backdrop"></div>
+            <div class="popup__content-wrapper">
+                <div class="popup__content">
+                    <h1 class="popup__title">歡迎來到台灣怪談</h1>
+                    <p class="popup__text"><br>今天是一個假日,你打算在哪度過呢?<br>看看兩邊的路通往哪裡吧!</p>
+
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        
+        <nav>
+            <div class="home"><img src="img/icon/logo.png" alt="" class="left marg_right1" /></div>                
+            <a href="index.html">測驗</a>
+            <a href="map.html">地圖</a>
+            <a href="#"data-bs-toggle="modal" data-bs-target="#myModa5">投稿</a>
+            <a href="#"data-bs-toggle="modal" data-bs-target="#myModa6">關於我們</a>
+        </nav>
+        <label for="side-menu-switch"> 
+            <img src="img/icon/menu.png" alt="" class="left marg_right1" />
+        </label>
+    </div>
+    
+    <div class="modal form" id="myModa5" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myModalLabel">投稿</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+          <form class="row g-3" action= "test1.php" method= "POST" >
+              <label for="recipient-name" class="col-sm-3 control-label">怪談名稱</label>
+              <div class="col-sm-8">
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+              <label for="message-text" class="col-sm-3 control-label">出沒地區</label>
+              <div class="col-sm-8">  
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+              <label for="message-text" class="col-sm-3 control-label">時期</label>
+              <div class="col-sm-4">   
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            
+              <label for="message-text" class="col-form-label">怪談故事</label>
+            <div class="col-sm-11">  
+              <textarea class="form-control" id="message-text" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+                <label class="sr-only" for="inputfile">相關圖片</label>
+                <input type="file" id="inputfile">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">投稿</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModa6" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen-md-down modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+             <h5 class="modal-title" id="myModalLabel">關於我們</h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="box1">
+              <h1>設計概念</h1>   
+              <p>你知道林投姐嗎?那蛇郎君的故事呢?<br>
+                說到台灣的妖魔奇譚你會想到甚麼?<br>
+                會不會有哪天台灣人口中不再口耳相傳這些我們曾經熟悉的故事,<br>
+                最終讓外國的鬼怪吞噬了我們的傳說?<br>                
+              </p>
+            </div>
+            <div class="box2">
+              <h1>製作團隊</h1>   
+              <p>我們是台灣怪談網站的設計者，我們希望將存在台灣本土的妖魔鬼怪記錄下來,以一種更有趣的方式讓大家有所認識<br>
+                1410822008 張育甄<br>
+                1410822010 倪紹瑄<br>
+                1410822016 彭雅雯<br>
+                1410822019 鄭佳純<br>                
+                1410822028 吳譿欣<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="carouselExampleControlsNoTouching" class="carousel slide " data-bs-touch="false"
+            data-bs-interval="false">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="img/測驗_過渡.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <a href="#Q2"><img src="img/測驗_瀑布-剪.png" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <a href="#Q4"><img src="img/測驗_海邊-剪.png" class="d-block w-100" alt=""></a>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div style="width: 100%;height:350px;"><br></div>
+    <div id="Q2">
+        <div class="container-fluid">
+            <div class="p-5 row  yg01 text-center">
+                <h1>你在山上遇到了一群迷路的登山客,你會為他們指路嗎?</h1>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary" onclick="location.href='#Q3'">會</button>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary"
+                    onclick="location.href='test_final/red_girl.html'">不會</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%;height:360px;"><br></div>
+    <div id="Q3">
+        <div class="container-fluid">
+            <div class="p-5 row  yg01 text-center">
+                <h1>你眼前有個岔路通往不同的風景區,你會去哪一邊?</h1>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary"
+                    onclick="location.href='test_final/mo_sin_a.html'">瀑布</button>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary"
+                onclick="location.href='test_final/yellow_fly.html'">斷崖</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100%;height:350px;"><br></div>
+    <div id="Q4">
+        <div class="container-fluid">
+            <div class="p-5 row  yg01 text-center">
+                <h1>到了海邊後,你會下水還是待在沙灘?</h1>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary"
+                    onclick="location.href='test_final/water_ghost.html'">下水</button>
+            </div>
+            <div class="col-md-4 col-sm-12 p-3 row  yg01 mx-auto">
+                <button type="button" class="btn btn-outline-secondary"
+                    onclick="location.href='test_final/lin_tou_sister.html'">沙灘</button>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%;height:350px;"><br></div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const popupClose = document.querySelector('.btn-close');
+
+        if (popupClose) {
+            popupClose.addEventListener('click', () => {
+                document.querySelector('.popup').style.display = 'none';
+                document.body.style.overflow = 'scroll';
+            });
+        }
+    })
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</html>
