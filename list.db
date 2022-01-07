@@ -1,5 +1,6 @@
-  { imgSrc: "../img/水1.png", name: "水鬼", area: "全台各地", years: "未知" }
-  { imgSrc: "../img/虎1.png", name: "虎姑婆", area: "客家聚落", years: "未知" }
-  { imgSrc: "../img/虎1.png", name: "虎姑婆2", area: "客家聚落", years: "未知" }
-  { imgSrc: "../img/虎1.png", name: "虎姑婆3", area: "客家聚落", years: "未知" }
-  { imgSrc: "../img/林1.png", name: "林投姐", area: "台南", years: "清代" }
+{"imgSrc":"../img/紅1.png","name":"虎姑婆","area":"客家聚落","years":"未知","_id":"72PNdkm6IzegeZcE"}
+{"imgSrc":"../img/林1.png","name":"林投姐","area":"台南","years":"清代","_id":"HkuX5Bov7D6K3lvY"}
+{"imgSrc":"../img/虎1.png","name":"虎姑婆","area":"客家聚落","years":"未知","_id":"QJdRfZeQCgabF4IU"}
+{"imgSrc":"../img/玉1.png","name":"水鬼","area":"全台各地","years":"未知","_id":"XIKNuyWdAjjJ0Zh7"}
+{"imgSrc":"../img/魔1.png","name":"林投姐","area":"台南","years":"清代","_id":"nAduOMKuPFwL9zEl"}
+{"imgSrc":"../img/水1.png","name":"水鬼","area":"全台各地","years":"未知","_id":"vKOXA8mAvSZXMMOY"}
