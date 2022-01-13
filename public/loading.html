@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Tâi-uân kuài tâm</title>
+    <title>LOADING......</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,19 +15,15 @@
 
         .loading {
             position: fixed;
-
+            bottom: 1200px;
+            right: 5000px;
         }
-
-        body {
-            background-image: url('img/純色底圖.png');
+        
+        body{
+            background-image: url('image/333.gif');
         }
-
-        .start{
-            position:absolute;
-            top:50%;
-            width: 100%;
-
-        }
+    
+        
     </style>
 </head>
 
@@ -35,17 +31,17 @@
 
     <!--加载动画-->
 
-    <div class="start">
-        <div class="container-fluid" style="text-align: center;">
+    <div id="loading" class="position-fixed">
+        <div class="loading">
             <div>
-                <img src="img/字體.png" class="img-fluid" alt="..."><br>
-                <button type="button" class="btn btn-outline-danger"  onclick="location.href='loading.html'">進入</button>
+             <img src="image/333.gif"width="500" > 
             </div>
         </div>
+
     </div>
 
 
-    <!-- <script>
+    <script>
         var $page = document.getElementById('first'),
            $load = document.getElementById('loading');
 
@@ -85,7 +81,7 @@
         }
 
         closeDiv()
-    </script> -->
+    </script>
 </body>
 
 </html>
